@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* resta al widht los atributos de caja que se declaren */
+}
+img {
+    max-width: 100%;
+}
+html {
+    min-height: 100%;
+}
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444;
+}
+h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+h3{
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: #666;
+}
+h4{
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #666;
+}
+p {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #666;
+}
+.mt2{
+    margin-top: 2vh;
+}
+.mt15{
+    margin-top: 15vh;
+}
+.mr--auto{
+    margin-right: auto;
+}
+.mr5{
+    margin-right: 5%;
+}
+.mb3{
+    margin-bottom: 3vh;
+}
+.mb15{
+    margin-bottom: 15vh;
+}
+.mb20{
+    margin-bottom: 20vh;
+}
+.ml--auto{
+    margin-left: auto;
+}
+.ml5{
+    margin-left: 5%;
+}
+.p3{
+    padding: 3%;
+}
+.color--middle{
+    color: #666;
+}
+.container{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header" "main" "footer";
+}
+#header{
+    grid-area: header;
+}
+#main{
+    grid-area: main;
+}
+#footer{
+    grid-area: footer;
+}
+.header {
+    display: flex;
+    position: relative;
+}
+.header__title {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    left: 5%;
+    margin-top: 30vh;
+}
+.header__img{
+    object-position: center top;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+/* Portada section img */
+.section__img{
+    object-position: center top;
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+}
+/* /Portada section img */
+.header__subtitle{
+    display: none;
+}
+.header__btn{
+    margin-top: 5vh;
+    padding: 6% 35%;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #fff;
+    background-color: #536C43;
+    border-radius: 15px;
+    border-style: none;
+    box-shadow: 0px 0px 25px #999;
+}
+.header__btn:hover{
+    color:#CEAC39;
+    box-shadow: 0px 0px 25px #304622;
+}
+/* nav */
+.nav{
+    display: flex;
+    position: absolute;
+    margin: 0px auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 25px #999;
+    padding: 2% 3% 3% 3%;
+    width: 100vw;
+}
+.nav__logo{
+    min-width: 30vh;
+    max-width: 60vw;
+    display: flex;
+    align-items: center;
+}
+.nav__list{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0px;
+    justify-content: flex-end;
+    gap: 2%;
+}
+.nav__list__item{
+    text-decoration: none;
+    background-color: #fff;
+}
+.nav__list__item__link{
+    text-decoration: none;
+    color: #666;
+    font-size: 1rem;
+}
+.nav__list__item__link:hover{
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+.nav__list__item__link--active{
+    text-decoration: none;
+    color: #CEAC39;
+    font-size: 1rem;
+}
+/* /nav */
+/* Main intro */
+.intro{
+    width: 60vw;
+    text-align: center;
+}
+/* /Main intro */
+/* Main service index */
+.service{
+    margin: 0 5% 10% 5%;
+}
+.service__galery{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+/* /Main service index */
+/* Main column */
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.column__text{
+    text-align: center;
+}
+/* /Main column */
+/* Main card */
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4rem;
+}
+.card__text{
+    box-shadow: 0px 0px 25px #999;
+    text-align: center;
+    width: 80vw;
+}
+.card__img{
+    width: 100%;
+}
+/* /Main card */
+.title--center{
+    text-align: center;
+    margin-bottom: 10%;
+    color: #444;
+}
+/* Call to action "Seguinos" */
+.action{
+    color: #fff;
+    background-color: #536C43;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.action__content{
+    margin-top: 4%;
+}
+.action__content__icons{
+    margin-right: 2%;
+}
+/* /Call to action "Seguinos" */
+/* Call to action "Contactanos" */
+.btn{
+    margin-top: 3%;
+    padding: 1% 3%;
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: #536C43;
+    background-color: #fff;
+    border-radius: 15px;
+    border-style: none;
+    box-shadow: 0px 0px 25px #999;
+}
+.btn:hover{
+    box-shadow: 0px 0px 25px #fff;
+    color:#CEAC39;
+}
+.colorWhite{
+    color:#fff;
+}
+/* /Call to action "Contactanos" */
+/* Tabla Price Acopio */
+.prices__table{
+    width: 90vw;
+    box-shadow: 0px 0px 25px #999;
+    border-collapse: collapse;
+}
+.prices__table__tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.prices__table__tr:hover{
+    background-color: #ddd;
+}
+.prices__table__td{
+    padding: 2%;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+/* /Tabla Price Acopio */
+/* Mapa */
+.content__map{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items:center;
+    text-align: center;
+}
+.map--responsive{
+    width: 90vw;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map--responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+/* Mapa */
+/* Contacto */
+.contact__details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+}
+.mails{
+    order: 2;
+    width: 90vw;
+    text-align: center;
+    margin-top: 15%;
+}
+.form{
+    order: 1;
+    text-align: center;
+    width: 90vw;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 10%;
+}
+.form__input__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 3%;
+}
+.form__input__row--input{
+    width: 75%;
+    padding: 2%;
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 11px #999;
+}
+.form__input__select{
+    width: 100%;
+    padding: 2%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 11px #999;
+    margin-bottom: 3%;
+}
+.btn--center{
+    margin-left: 50%;
+}
+/* /Contacto */
+/* footer */
+#footer{
+    display: grid;
+	grid-template-columns: repeat(1,1fr);
+	grid-template-rows: repeat(3,auto);
+	grid-template-areas: "footer--adress" "footer--contact" "copyright";
+}
+.footer{
+    list-style-type: none;
+    padding: 5% 5% 2% 5%;
+    justify-content: center;
+}
+.footer__content{
+    vertical-align: top;
+}
+.footer__content--links{
+    vertical-align: top;
+}
+.footer__content__item{
+    margin-top: 1%;
+}
+.footer__content__item__text{
+    color: #666;
+    font-size: 0.90rem;
+}
+.footer__content__item__link{
+    text-decoration: none;
+    color: #666;
+    font-size: 0.90rem;
+}
+.footer__content__item__link:hover{
+    color: #000;
+    font-size: 0.90rem;
+}
+.footer__content__item__link--active{
+    text-decoration: none;
+    color: #CEAC39;
+    font-size: 0.90rem;
+}
+.footer__copyright{
+    margin: 2% auto 2% auto;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #666;
+}
+.footer__content--hidden{
+    display: none;
+}
+.footer--adress{
+    margin-bottom: 3%;
+    text-align: center;
+}
+.footer--contact{
+    margin-bottom: 3%;
+    text-align: center;
+}
+/* /footer */
+
+/* media queries < 768 */
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    h3{
+        font-size: 1.3rem;
+        font-weight: normal;
+        color: #666;
+    }
+    h4{
+        font-size: 1.2rem;
+        font-weight: normal;
+        color: #666;
+    }
+    p{
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    .mt15{
+        margin-top: 20vh;
+    }
+    .intro{
+        width: 50vw;
+    }
+    .header__title{
+        left: 5%;
+    }
+    .header__img {
+        display: flex;
+        width: 100vw;
+    }
+    .header__btn{
+        padding: 6% 35%;
+    }
+    .service__galery{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .header__subtitle{
+        margin: 1% auto 2% auto;
+        width: 50vw;
+        display: flex;
+    }
+/* nav 768 */
+    .nav{
+        top: 30px;
+        border-radius: 50px;
+        width: 90%;
+        padding: 1% 3%;
+        left: 5%;
+    }
+    .nav__list{
+        flex-wrap: nowrap;
+        flex-grow: 1;
+        align-items: center;
+    }
+    .nav__logo{
+        min-width: 38vh;
+        max-width: 50vw;
+        display: flex;
+        align-items: center;
+    }
+/* /nav 768 */
+/* Main column 768 */
+    .column{
+        flex-direction: row;
+        justify-content: space-evenly;
+        column-gap: 2rem;
+    }
+    .column__text{
+        box-shadow: 0px 0px 25px #999;
+        width: 30vw;
+    }
+/* /Main column media queries 768 */
+/* Main card media queries 768 */
+    .card{
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        column-gap: 4rem;
+    }
+    .card__text{
+        box-shadow: 0px 0px 25px #999;
+        text-align: center;
+        width: 35vw;
+    }
+/* /Main card media queries 768 */
+/* Tabla Price Acopio media queries 768 */
+    .prices__table{
+        width: 80vw;
+    }
+/* /Tabla Price Acopio media queries 768 */
+/* Mapa media queries 768 */
+.content__map{
+    flex-direction: row;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.map--responsive{
+    width: 80vw;
+    padding-bottom:40%;
+}
+/* /Mapa media queries 768 */
+/* Contacto media queries 768 */
+.contact__details{
+    flex-direction: row;
+    column-gap: 4rem;
+    align-items: flex-start;
+}
+.mails{
+    order: 1;
+    width: 30vw;
+    text-align: center;
+    margin-top: 0%;
+}
+.form{
+    order: 2;
+    text-align: center;
+    width: 60vw;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 0%;
+    vertical-align: top;
+}
+.form__input__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 4%;
+}
+.form__input__row--input{
+    width: 75%;
+    padding: 2%;
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 11px #999;
+}
+.form__input__select{
+    width: 100%;
+    padding: 2%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 11px #999;
+    margin-bottom: 4%;
+}
+.btn--center{
+    margin-left: 50%;
+}
+/* /Contacto */
+/* /Contacto media queries 768 */
+/* footer media queries 768 */
+    #footer{
+        display: grid;
+        grid-template-columns: 29% 13% 24% 24%;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "footer--logo footer--link footer--adress footer--contact" 
+            "copyright copyright copyright copyright";
+    }
+    .footer{
+        padding: 5% 5% 1% 5%;
+        justify-content: space-between;
+    }
+    .footer__content--hidden{
+        display: block;
+    }
+    .footer--logo{
+        grid-area: footer--logo;
+    }
+    .footer--link{
+        grid-area: footer--link;
+    }
+    .footer--adress{
+        grid-area: footer--adress;
+    }
+    .footer__content__logo{
+        width: 100%;
+    }
+    .footer__content__item{
+        margin-top: 3%;
+    }
+    .footer--adress{
+        text-align: left;
+    }
+    .footer--contact{
+        text-align: left;
+    }
+    .footer__copyright{
+        grid-area: copyright;
+    }
+    .footer--contact{
+        grid-area: footer--contact;
+    }
+/* /footer meedia queries 768 */
+}
+/* /media queries < 768 */
+
+/* media queries < 1024 */
+@media only screen and (min-width: 1024px) {
+    .nav__logo{
+        max-width: 30vw;
+    }
+    h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    h3{
+        font-size: 1.5rem;
+        font-weight: normal;
+        color: #666;
+    }
+    h4{
+        font-size: 1.2rem;
+        font-weight: normal;
+        color: #666;
+    }
+    p{
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+    .p3{
+        padding: 6%;
+    }
+    .header__title {
+        margin-top: 25vh;
+    }
+    .header__btn{
+        padding: 3% 11%;
+    }
+    .title--center{
+        margin-bottom: 5%;
+    }
+    .intro{
+        width: 40vw;
+    }
+/* Main card 1024 */
+    .card__text{
+        width: 25vw;
+    }
+/* /Main card 1024 */
+/* Tabla Price Acopio 1024 */
+    .prices__table{
+        width: 60vw;
+    }
+/* /Tabla Price Acopio 1024 */
+/* Mapa 1024 */
+.map--responsive{
+    width: 60vw;
+}
+/* Mapa 1024*/
+/* Call to action "Seguinos" 1024 */
+    .action{
+        color: #fff;
+        background-color: #536C43;
+        text-align: center;
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
+    .action__content{
+        margin-top: 2%;
+    }
+/* /Call to action "Seguinos" 1024 */
+}
+/* /media queries < 1024 */
