@@ -125,7 +125,6 @@ p {
     box-shadow: 0px 0px 25px #999;
 }
 .header__btn:hover{
-    color:#CEAC39;
     box-shadow: 0px 0px 25px #304622;
 }
 /* nav */
@@ -249,7 +248,6 @@ p {
 }
 .btn:hover{
     box-shadow: 0px 0px 25px #fff;
-    color:#CEAC39;
 }
 .colorWhite{
     color:#fff;
@@ -466,8 +464,8 @@ p {
         align-items: center;
     }
     .nav__logo{
-        min-width: 38vh;
-        max-width: 50vw;
+        min-width: 28vh;
+        max-width: 40vw;
         display: flex;
         align-items: center;
     }
@@ -612,7 +610,10 @@ p {
 /* media queries < 1024 */
 @media only screen and (min-width: 1024px) {
     .nav__logo{
+        min-width: 25vh;
         max-width: 30vw;
+        display: flex;
+        align-items: center;
     }
     h1 {
         font-size: 3.5rem;
