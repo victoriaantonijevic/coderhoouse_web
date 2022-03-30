@@ -5,26 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosembrar acopio de cereales y venta de fitosanitarios</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--/Bootstrap-->
+    <!--Icon Bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!--/Icon Bootstrap-->
+    <!--WOW-->
     <link rel="stylesheet" href="../css/animate.css">
+    <!--/WOW-->
+        <!--Estilos complementarios-->
+        <link rel="stylesheet" href="../css/style.css">
+    <!--/Estilos complementarios-->
 </head>
 <body>
-    <div class="container">
+    <div class="contains">
         <header class="header" id="header">
-            <nav class="nav">
-                <a href="../index.html">
-                    <img src="../img/logo.svg" alt="Logo de Cosembrar" srcset="" class="nav__logo">
-                </a>
-                <ul class="nav__list">
-                    <li class="nav__list__item"><a href="../index.html" class="nav__list__item__link">Inicio</a></li>
-                    <li class="nav__list__item"><a href="nosotros.html" class="nav__list__item__link">Nosotros</a></li>
-                    <li class="nav__list__item"><a href="acopio.html" class="nav__list__item__link">Acopio</a></li>
-                    <li class="nav__list__item"><a href="fitosanitarios.html" class="nav__list__item__link">Fitosanitarios</a></li>
-                    <li class="nav__list__item"><a href="contacto.html" class="nav__list__item__link--active">Contacto</a></li>
-                    <li class="nav__list__item"><a href="https://www.instagram.com/cosembrar" target="_blank" rel="noopener noreferrer" class="nav__list__item__link"><img src="../img/instagram.png" alt=""></a></li>
-                    <li class="nav__list__item"><a href="https://www.facebook.com/cosembrar" target="_blank" rel="noopener noreferrer" class="nav__list__item__link"><img src="../img/facebook.png" alt=""></a></li>
-                    <li class="nav__list__item"><a href="https://www.twitter.com/cosembrar" target="_blank" rel="noopener noreferrer" class="nav__list__item__link"><img src="../img/twitter.png" alt=""></a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-light contains__nav">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img src="../img/logo.svg" alt="Logo de Cosembrar" srcset="" class="nav__logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="acopio.html">Acopio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fitosanitarios.html">Fitosanitarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav__link--active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/cosembrar" target="_blank"><i class="bi bi-instagram"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.facebook.com/cosembrar" target="_blank"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.twitter.com/cosembrar" target="_blank"><i class="bi bi-twitter"></i></a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
             <div>
                 <img src="../img/nosotros.jpg" alt="Contacto Cosembrar" class="section__img" />
@@ -90,18 +121,18 @@
                                 <option value="otros">Otros</option>
                             </select>
                             <textarea name="comentario" id="comentario" cols="30" rows="10" class="form__input__select"></textarea>
-                            <input type="submit" class="header__btn" value="Enviar">
+                            <input type="submit" class="pt-3 pb-3 header__btn" value="Enviar">
                         </form>
                     </div>
 <!--/Form-->
                 </div>
 <!-- Call to action -->
-                <div class="action mt15">
+                <div class="text-center action">
                     <h2 class="wow fadeInDown">Seguinos</h2>
                     <div class="action__content">
-                        <a href="https://www.instagram.com/cosembrar" target="_blank" rel="noopener noreferrer" class="action__content__icons"><img src="../img/instagram--white.png" alt="Logo Instagram"></a>
-                        <a href="https://www.facebook.com/cosembrar" target="_blank" rel="noopener noreferrer" class="action__content__icons"><img src="../img/facebook--white.png" alt="Logo Facebook"></a>
-                        <a href="https://www.twitter.com/cosembrar" target="_blank" rel="noopener noreferrer"><img src="../img/twitter--white.png" alt="Logo Twitter"></a>
+                        <a href="https://www.instagram.com/cosembrar" target="_blank" rel="noopener noreferrer" class="me-4 action__icons"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/cosembrar" target="_blank" rel="noopener noreferrer" class="me-4 action__icons"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.twitter.com/cosembrar" target="_blank" rel="noopener noreferrer" class="action__icons"><i class="bi bi-twitter"></i></a>
                     </div>
                 </div>
 <!-- /Call to action -->
@@ -133,8 +164,8 @@
             <div class="footer__content footer--contact">
                 <h4>Habla con nosotros</h4>
                 <div class="footer__content__item">
-                    <p class="footer__content__item__text">info@cosembrar.com.ar</p>
-                    <p class="footer__content__item__text">02326 45 3574</p>
+                    <p class="footer__content__item__text mb-1">info@cosembrar.com.ar</p>
+                    <p class="footer__content__item__text mb-1">02326 45 3574</p>
                     <a href="https://wa.me/34691675782" target="_blank" rel="noopener noreferrer" class="footer__content__item__link">Whatsapp</a>
                     <br>
                     <a href="contacto.html" class="footer__content__item__link">Contacto</a>
