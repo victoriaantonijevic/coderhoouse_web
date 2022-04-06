@@ -1,0 +1,400 @@
+.mt2{
+    margin-top: 2vh;
+}
+.mt15{
+    margin-top: 15vh;
+    @media only screen and (min-width: 768px) {
+        margin-top: 20vh;
+    }
+}
+.mr--auto{
+    margin-right: auto;
+}
+.mr5{
+    margin-right: 5%;
+}
+.mb3{
+    margin-bottom: 3vh;
+}
+.mb15{
+    margin-bottom: 15vh;
+}
+.mb20{
+    margin-bottom: 20vh;
+    @media only screen and (min-width: 768px) {
+        margin-bottom: 20vh;
+    }
+}
+.ml--auto{
+    margin-left: auto;
+}
+.ml5{
+    margin-left: 5%;
+}
+.color--middle{
+    color: $colorMiddle;
+}
+.contains{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header" "main" "footer";
+}
+#header{
+    grid-area: header;
+}
+#main{
+    grid-area: main;
+}
+#footer{
+    grid-area: footer;
+}
+.header {
+    display: flex;
+    position: relative;
+}
+.header__title {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    left: 5%;
+    margin-top: 30vh;
+    @media only screen and (min-width: 768px) {
+        left: 5%;
+    }
+    @media only screen and (min-width: 1024px) {
+        margin-top: 25vh;
+    }
+}
+.header__img{
+    object-position: center top;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        width: 100vw;
+    }
+}
+/* Portada section img */
+.section__img{
+    object-position: center top;
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+}
+/* /Portada section img */
+.header__subtitle{
+    display: none;
+    @media only screen and (min-width: 768px) {
+        margin: 1% auto 2% auto;
+        width: 50vw;
+        display: flex;
+    }
+}
+.header__btn{
+    width: 55vw;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: $colorbright;
+    background-color: $colorPrimary;
+    border-radius: 15px;
+    border-style: none;
+    box-shadow: $shadowLight;
+    &:hover{
+        box-shadow: $shadowMiddle;
+    }
+    @media only screen and (min-width: 768px) {
+        width: 250px;
+    }
+}
+/* Main intro */
+.intro{
+    width: 60vw;
+    text-align: center;
+    @media only screen and (min-width: 768px) {
+        width: 50vw;
+    }
+    @media only screen and (min-width: 1024px) {
+        width: 40vw;
+    }
+}
+/* /Main intro */
+/* Main service index */
+.service{
+    margin: 0 5% 10% 5%;
+}
+.service__galery{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+/* /Main service index */
+/* Main column */
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        column-gap: 2rem;
+    }
+}
+.column__text{
+    text-align: center;
+    @media only screen and (min-width: 768px) {
+        box-shadow: $shadowLight;
+        width: 30vw;
+    }
+}
+/* /Main column */
+/* Main card */
+.card__contains{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4rem;
+    @media only screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        column-gap: 4rem;
+    }
+}
+.card__contains__text{
+    box-shadow: $shadowLight;
+    text-align: center;
+    width: 80vw;
+    @media only screen and (min-width: 768px) {
+        box-shadow: $shadowLight;
+        text-align: center;
+        width: 35vw;
+    }
+    @media only screen and (min-width: 1024px) {
+        width: 25vw;
+    }
+}
+.card__contains__img{
+    width: 100%;
+}
+/* /Main card */
+.title--center{
+    text-align: center;
+    margin-bottom: 10%;
+    color: $colorMiddle;
+    @media only screen and (min-width: 1024px) {
+        text-align: center;
+        margin-bottom: 5%;
+        color: $colorMiddle;
+    }
+}
+/* Call to action "Seguinos" */
+.action{
+    color: $colorbright;
+    background-color: $colorPrimary;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    @media only screen and (min-width: 1024px) {
+        color: $colorbright;
+        background-color: $colorPrimary;
+        text-align: center;
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
+}
+.action__content{
+    margin-top: 4%;
+    @media only screen and (min-width: 1024px) {
+        margin-top: 2%;
+    }
+}
+.action__icons{
+    color: $colorbright;
+    font-size: 1.4rem;
+    &:hover{
+        color: $colorSecondary;
+    }
+}
+/* /Call to action "Seguinos" */
+/* Call to action "Contactanos" */
+.action__btn{
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: $colorPrimary;
+    background-color: $colorbright;
+    border-radius: 15px;
+    border-style: none;
+    box-shadow: $shadowLight;
+    width: 85vw;
+    &:hover{
+        box-shadow: $shadowBright;
+    }
+    @media only screen and (min-width: 768px) {
+        font-size: 1.3rem;
+        width: 250px;
+    }
+}
+.colorWhite{
+    color:$colorbright;
+}
+/* /Call to action "Contactanos" */
+/* Tabla Price Acopio */
+.prices__table{
+    width: 90vw;
+    box-shadow: $shadowLight;
+    border-collapse: collapse;
+    @media only screen and (min-width: 768px) {
+        width: 80vw;
+    }
+    @media only screen and (min-width: 1024px) {
+        width: 60vw;
+    }
+}
+.prices__table__tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.prices__table__tr:hover{
+    background-color: #ddd;
+}
+.prices__table__td{
+    padding: 2%;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+/* /Tabla Price Acopio */
+/* Mapa */
+.content__map{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items:center;
+    text-align: center;
+    @media only screen and (min-width: 768px) {
+        flex-direction: row;
+        column-gap: 2rem;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+.map--responsive{
+    width: 90vw;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    @media only screen and (min-width: 768px) {
+        width: 80vw;
+        padding-bottom:40%;
+    }
+    @media only screen and (min-width: 1024px) {
+        width: 60vw;
+    }
+}
+.map--responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+/* Mapa */
+/* Contacto */
+.contact__details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+    @media only screen and (min-width: 768px) {
+        flex-direction: row;
+        column-gap: 4rem;
+        align-items: flex-start;
+    }
+}
+.mails{
+    order: 2;
+    width: 90vw;
+    text-align: center;
+    margin-top: 15%;
+    @media only screen and (min-width: 768px) {
+        order: 1;
+        width: 30vw;
+        text-align: center;
+        margin-top: 0%;
+    }
+}
+.form{
+    order: 1;
+    text-align: center;
+    width: 90vw;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 10%;
+    @media only screen and (min-width: 768px) {
+        order: 2;
+        text-align: center;
+        width: 60vw;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 0%;
+        vertical-align: top;
+    }
+}
+.form__input__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 3%;
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 4%;
+    }
+}
+.form__input__row--input{
+    width: 75%;
+    padding: 2%;
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: $shadowLight;
+    @media only screen and (min-width: 768px) {
+        width: 75%;
+        padding: 2%;
+        margin-left: 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: $shadowLight;
+    }
+}
+.form__input__select{
+    width: 100%;
+    padding: 2%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: $shadowLight;
+    margin-bottom: 3%;
+    @media only screen and (min-width: 768px) {
+        width: 100%;
+        padding: 2%;
+        border: none;
+        border-radius: 5px;
+        box-shadow: $shadowLight;
+        margin-bottom: 4%;
+    }
+}
+/* /Contacto */

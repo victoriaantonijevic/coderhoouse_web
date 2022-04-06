@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* resta al widht los atributos de caja que se declaren */
+}
+img {
+    max-width: 100%;
+}
+html {
+    min-height: 100%;
+}
