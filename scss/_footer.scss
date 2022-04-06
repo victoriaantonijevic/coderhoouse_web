@@ -1,0 +1,98 @@
+#footer{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: "footer--adress" "footer--contact" "copyright";
+    @media only screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 29% 13% 24% 24%;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "footer--logo footer--link footer--adress footer--contact" 
+            "copyright copyright copyright copyright";
+    }
+}
+.footer{
+    list-style-type: none;
+    padding: 5% 5% 2% 5%;
+    justify-content: center;
+    @media only screen and (min-width: 768px) {
+        padding: 5% 5% 1% 5%;
+        justify-content: space-between;
+    }
+}
+.footer__content{
+    vertical-align: top;
+}
+.footer__content--links{
+    vertical-align: top;
+}
+.footer__content__item{
+    margin-top: 1%;
+    @media only screen and (min-width: 768px) {
+        margin-top: 3%;
+    }
+}
+.footer__content__item__text{
+    color: $colorMiddle;
+    font-size: 0.90rem;
+}
+.footer__content__item__link{
+    text-decoration: none;
+    color: $colorMiddle;
+    font-size: 0.90rem;
+}
+.footer__content__item__link:hover{
+    color: $colorDark;
+    font-size: 0.90rem;
+}
+.footer__content__item__link--active{
+    text-decoration: none;
+    color: $colorSecondary;
+    font-size: 0.90rem;
+}
+.footer__content__item__link--active:hover{
+    color: $colorSecondary;
+}
+.footer__copyright{
+    margin: 2% auto 2% auto;
+    text-align: center;
+    font-size: 0.95rem;
+    color: $colorMiddle;
+    @media only screen and (min-width: 768px) {
+        grid-area: copyright;
+    }
+}
+.footer__content--hidden{
+    display: none;
+    @media only screen and (min-width: 768px) {
+        display: block;
+    }
+}
+.footer--adress{
+    margin-bottom: 3%;
+    text-align: center;
+    @media only screen and (min-width: 768px) {
+        grid-area: footer--adress;
+        text-align: left;
+    }
+}
+.footer--contact{
+    margin-bottom: 3%;
+    text-align: center;
+    @media only screen and (min-width: 768px) {
+        grid-area: footer--contact;
+        text-align: left;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .footer--logo{
+        grid-area: footer--logo;
+    }
+    .footer--link{
+        grid-area: footer--link;
+    }
+    .footer__content__logo{
+        width: 80%;
+    }
+}

@@ -1,0 +1,58 @@
+.contains__nav{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    background-color: $colorbright;
+    box-shadow: $shadowLight;
+    padding: 2% 3% 3% 3%;
+    width: 100vw;
+    z-index: 2;
+    @media only screen and (min-width: 768px) {
+        top: 30px;
+        border-radius: 50px;
+        width: 90%;
+        padding: 1% 3%;
+        left: 5%;
+    }
+}
+.nav__logo{
+    min-width: 23vh;
+    display: flex;
+    align-items: center;
+    @media only screen and (min-width: 768px) {
+        min-width: 20vh;
+        display: flex;
+        align-items: center;
+    }
+}
+#nav__link--active{
+    color: $colorSecondary;
+}
+.hover--bold:hover{
+    font-weight: 500;
+}
+@media only screen and (min-width: 992px) {
+    .animation:hover{
+        transition: all 0.4s ease-in-out;
+        transition-property: all;
+        transition-duration: 0.4s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
+    }
+    @keyframes icon__animation{0%,100%{transform:scale3d(1,1,1)}
+                    30%{transform:scale3d(1.25,.75,1)}
+                    40%{transform:scale3d(.75,1.25,1)}
+                    50%{transform:scale3d(1.15,.85,1)}
+                    65%{transform:scale3d(.95,1.05,1)}
+                    75%{transform:scale3d(1.05,.95,1)}}
+    .icon__animation:hover{
+        animation: icon__animation .9s both;
+        animation-duration: 0.9s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-direction: normal;
+        animation-fill-mode: both;
+        animation-play-state: running;
+        animation-name: icon__animation;
+    }
+}
