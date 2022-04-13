@@ -37,22 +37,41 @@
     color: $colorMiddle;
     font-size: 0.90rem;
 }
+.footer__content__item__mail{
+    color: $colorMiddle;
+    font-size: 0.90rem;
+    text-decoration: none;
+    &:hover{
+        color: $colorDark;
+        font-size: 0.90rem;
+        font-weight: 500;
+    }
+}
 .footer__content__item__link{
     text-decoration: none;
     color: $colorMiddle;
     font-size: 0.90rem;
-}
-.footer__content__item__link:hover{
+    &:hover{
     color: $colorDark;
     font-size: 0.90rem;
+    font-weight: 500;
+    }
 }
 .footer__content__item__link--active{
     text-decoration: none;
     color: $colorSecondary;
     font-size: 0.90rem;
+    &:hover{
+        color: $colorSecondary;
+    }
 }
-.footer__content__item__link--active:hover{
-    color: $colorSecondary;
+.footer__content__item__link--author{
+    text-decoration: none;
+    color: $colorLight;
+    font-size: 0.90rem;
+    &:hover{
+        color: $colorDark;
+    }
 }
 .footer__copyright{
     margin: 2% auto 2% auto;
@@ -65,6 +84,7 @@
 }
 .footer__content--hidden{
     display: none;
+    line-height:1.8rem;
     @media only screen and (min-width: 768px) {
         display: block;
     }
@@ -80,9 +100,21 @@
 .footer--contact{
     margin-bottom: 3%;
     text-align: center;
+    line-height:1.8rem;
     @media only screen and (min-width: 768px) {
         grid-area: footer--contact;
         text-align: left;
+    }
+}
+.brand--whatsapp{
+    background-color: $colorWhatsapp;
+    color: $colorbright;
+    padding: 0.30rem 0.50rem;
+    border-radius: 50%;
+    &:hover{
+        color: $colorWhatsapp;
+        background-color: $colorbright;
+        border: $colorWhatsapp 2px solid;
     }
 }
 @media only screen and (min-width: 768px) {

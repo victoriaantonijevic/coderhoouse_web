@@ -31,6 +31,10 @@
 .ml5{
     margin-left: 5%;
 }
+.contact__link{
+    display: flex;
+    text-decoration: none;
+}
 .color--middle{
     color: $colorMiddle;
 }
@@ -62,6 +66,8 @@
     text-align: center;
     left: 5%;
     margin-top: 30vh;
+    display: flex;
+    flex-direction: column;
     @media only screen and (min-width: 768px) {
         left: 5%;
     }
@@ -86,12 +92,14 @@
     height: 80vh;
     object-fit: cover;
 }
+.bg__primary{
+    background-color: rgba(40,67,23,0.78);
+}
 /* /Portada section img */
 .header__subtitle{
     display: none;
     @media only screen and (min-width: 768px) {
         margin: 1% auto 2% auto;
-        width: 50vw;
         display: flex;
     }
 }
@@ -199,6 +207,12 @@
         color: $colorMiddle;
     }
 }
+.title--section{
+    color: $colorbright;
+    text-transform: uppercase;
+    @media only screen and (min-width: 1024px) {
+    }
+}
 /* Call to action "Seguinos" */
 .action{
     color: $colorbright;
@@ -223,6 +237,14 @@
 .action__icons{
     color: $colorbright;
     font-size: 1.4rem;
+    &:hover{
+        color: $colorSecondary;
+    }
+}
+.action__mail{
+    color: $colorbright;
+    font-size: 1.4rem;
+    text-decoration: none;
     &:hover{
         color: $colorSecondary;
     }
@@ -313,25 +335,53 @@
 /* Contacto */
 .contact__details{
     display: flex;
-    flex-direction: column;
-    row-gap: 2rem;
     align-items: center;
     @media only screen and (min-width: 768px) {
-        flex-direction: row;
-        column-gap: 4rem;
         align-items: flex-start;
+        flex-direction: row;
+        column-gap: 2rem;
+        justify-content: space-evenly;
     }
 }
-.mails{
-    order: 2;
-    width: 90vw;
-    text-align: center;
-    margin-top: 15%;
+.contact__details--mails{
+    width: 25vw;
+    justify-content: center;
+}
+.mails__mail{
+    font-size: 1rem;
+    font-weight: normal;
+    color: $colorMiddle;
+    text-decoration: none;
     @media only screen and (min-width: 768px) {
-        order: 1;
-        width: 30vw;
-        text-align: center;
-        margin-top: 0%;
+        font-size: 1.1rem;
+        font-weight: normal;
+    }
+    @media only screen and (min-width: 1024px) {
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+    &:hover{
+        color: $colorDark;
+    }
+}
+.mails__icons{
+    font-size: 1.3rem;
+    color: $colorMiddle;
+    text-decoration: none;
+    &:hover{
+        color: $colorDark;
+    }
+}
+.contact__social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon__primary{
+    font-size: 1.3rem;
+    color: $colorPrimary;
+    &:hover{
+        color: $colorSecondary;
     }
 }
 .form{
