@@ -42,7 +42,7 @@
     font-size: 0.90rem;
     text-decoration: none;
     &:hover{
-        color: $colorDark;
+        color: map-get($map: $color, $key: 'dark');
         font-size: 0.90rem;
         font-weight: 500;
     }
@@ -52,7 +52,7 @@
     color: $colorMiddle;
     font-size: 0.90rem;
     &:hover{
-    color: $colorDark;
+    color: map-get($map: $color, $key: 'dark');
     font-size: 0.90rem;
     font-weight: 500;
     }
@@ -70,7 +70,7 @@
     color: $colorLight;
     font-size: 0.90rem;
     &:hover{
-        color: $colorDark;
+        color: map-get($map: $color, $key: 'dark');
     }
 }
 .footer__copyright{
@@ -108,12 +108,12 @@
 }
 .brand--whatsapp{
     background-color: $colorWhatsapp;
-    color: $colorbright;
+    color: map-get($map: $color, $key: 'bright');
     padding: 0.30rem 0.50rem;
     border-radius: 50%;
     &:hover{
         color: $colorWhatsapp;
-        background-color: $colorbright;
+        background-color: map-get($map: $color, $key: 'bright');
         border: $colorWhatsapp 2px solid;
     }
 }

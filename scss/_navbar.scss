@@ -2,7 +2,7 @@
     display: flex;
     position: absolute;
     align-items: center;
-    background-color: $colorbright;
+    background-color: map-get($map: $color, $key: 'bright');
     box-shadow: $shadowLight;
     padding: 2% 3% 3% 3%;
     width: 100vw;
