@@ -175,6 +175,10 @@ p {
 .ml5 {
   margin-left: 5%; }
 
+.contact__link {
+  display: flex;
+  text-decoration: none; }
+
 .color--middle {
   color: #444; }
 
@@ -205,7 +209,9 @@ p {
   justify-content: center;
   text-align: center;
   left: 5%;
-  margin-top: 30vh; }
+  margin-top: 30vh;
+  display: flex;
+  flex-direction: column; }
   @media only screen and (min-width: 768px) {
     .header__title {
       left: 5%; } }
@@ -230,13 +236,15 @@ p {
   height: 80vh;
   object-fit: cover; }
 
+.bg__primary {
+  background-color: rgba(40, 67, 23, 0.78); }
+
 /* /Portada section img */
 .header__subtitle {
   display: none; }
   @media only screen and (min-width: 768px) {
     .header__subtitle {
       margin: 1% auto 2% auto;
-      width: 50vw;
       display: flex; } }
 
 .header__btn {
@@ -281,6 +289,9 @@ p {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap; } }
+
+.service__galery--img {
+  max-width: 28vw; }
 
 /* /Main service index */
 /* Main column */
@@ -342,6 +353,10 @@ p {
       margin-bottom: 5%;
       color: #444; } }
 
+.title--section {
+  color: #fff;
+  text-transform: uppercase; }
+
 /* Call to action "Seguinos" */
 .action {
   color: #fff;
@@ -394,8 +409,8 @@ p {
 /* Tabla Price Acopio */
 .prices__table {
   width: 90vw;
-  box-shadow: 0px 0px 25px #999;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  box-shadow: 0px 0px 25px #fff; }
   @media only screen and (min-width: 768px) {
     .prices__table {
       width: 80vw; } }
@@ -454,26 +469,56 @@ p {
 /* Contacto */
 .contact__details {
   display: flex;
-  flex-direction: column;
-  row-gap: 2rem;
   align-items: center; }
   @media only screen and (min-width: 768px) {
     .contact__details {
+      align-items: flex-start;
       flex-direction: row;
-      column-gap: 4rem;
-      align-items: flex-start; } }
+      column-gap: 2rem;
+      justify-content: space-evenly; } }
 
-.mails {
-  order: 2;
-  width: 90vw;
-  text-align: center;
-  margin-top: 15%; }
+.contact__details--mails {
+  width: 25vw;
+  justify-content: center; }
+
+.mails__mail, .action__mail {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #444;
+  text-decoration: none; }
   @media only screen and (min-width: 768px) {
-    .mails {
-      order: 1;
-      width: 30vw;
-      text-align: center;
-      margin-top: 0%; } }
+    .mails__mail, .action__mail {
+      font-size: 1.1rem;
+      font-weight: normal; } }
+  @media only screen and (min-width: 1024px) {
+    .mails__mail, .action__mail {
+      font-size: 1.2rem;
+      font-weight: normal; } }
+  .mails__mail:hover, .action__mail:hover {
+    color: #000; }
+
+.action__mail {
+  color: #fff; }
+  .action__mail:hover {
+    color: #CEAC39; }
+
+.mails__icons {
+  font-size: 1.3rem;
+  color: #444;
+  text-decoration: none; }
+  .mails__icons:hover {
+    color: #000; }
+
+.contact__social {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.icon__primary {
+  font-size: 1.3rem;
+  color: #536C43; }
+  .icon__primary:hover {
+    color: #CEAC39; }
 
 .form {
   order: 1;
@@ -576,22 +621,37 @@ p {
   color: #444;
   font-size: 0.90rem; }
 
+.footer__content__item__mail {
+  color: #444;
+  font-size: 0.90rem;
+  text-decoration: none; }
+  .footer__content__item__mail:hover {
+    color: #000;
+    font-size: 0.90rem;
+    font-weight: 500; }
+
 .footer__content__item__link {
   text-decoration: none;
   color: #444;
   font-size: 0.90rem; }
-
-.footer__content__item__link:hover {
-  color: #000;
-  font-size: 0.90rem; }
+  .footer__content__item__link:hover {
+    color: #000;
+    font-size: 0.90rem;
+    font-weight: 500; }
 
 .footer__content__item__link--active {
   text-decoration: none;
   color: #CEAC39;
   font-size: 0.90rem; }
+  .footer__content__item__link--active:hover {
+    color: #CEAC39; }
 
-.footer__content__item__link--active:hover {
-  color: #CEAC39; }
+.footer__content__item__link--author {
+  text-decoration: none;
+  color: #999;
+  font-size: 0.90rem; }
+  .footer__content__item__link--author:hover {
+    color: #000; }
 
 .footer__copyright {
   margin: 2% auto 2% auto;
@@ -603,7 +663,8 @@ p {
       grid-area: copyright; } }
 
 .footer__content--hidden {
-  display: none; }
+  display: none;
+  line-height: 1.8rem; }
   @media only screen and (min-width: 768px) {
     .footer__content--hidden {
       display: block; } }
@@ -618,11 +679,22 @@ p {
 
 .footer--contact {
   margin-bottom: 3%;
-  text-align: center; }
+  text-align: center;
+  line-height: 1.8rem; }
   @media only screen and (min-width: 768px) {
     .footer--contact {
       grid-area: footer--contact;
       text-align: left; } }
+
+.brand--whatsapp {
+  background-color: #65d258;
+  color: #fff;
+  padding: 0.30rem 0.50rem;
+  border-radius: 50%; }
+  .brand--whatsapp:hover {
+    color: #65d258;
+    background-color: #fff;
+    border: #65d258 2px solid; }
 
 @media only screen and (min-width: 768px) {
   .footer--logo {
