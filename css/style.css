@@ -381,13 +381,6 @@ p {
   .action__icons:hover {
     color: #CEAC39; }
 
-.action__mail {
-  color: #fff;
-  font-size: 1.4rem;
-  text-decoration: none; }
-  .action__mail:hover {
-    color: #CEAC39; }
-
 /* /Call to action "Seguinos" */
 /* Call to action "Contactanos" */
 .action__btn {
@@ -413,8 +406,8 @@ p {
 /* Tabla Price Acopio */
 .prices__table {
   width: 90vw;
-  box-shadow: 0px 0px 25px #999;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  box-shadow: 0px 0px 25px #fff; }
   @media only screen and (min-width: 768px) {
     .prices__table {
       width: 80vw; } }
@@ -485,21 +478,26 @@ p {
   width: 25vw;
   justify-content: center; }
 
-.mails__mail {
+.mails__mail, .action__mail {
   font-size: 1rem;
   font-weight: normal;
   color: #444;
   text-decoration: none; }
   @media only screen and (min-width: 768px) {
-    .mails__mail {
+    .mails__mail, .action__mail {
       font-size: 1.1rem;
       font-weight: normal; } }
   @media only screen and (min-width: 1024px) {
-    .mails__mail {
+    .mails__mail, .action__mail {
       font-size: 1.2rem;
       font-weight: normal; } }
-  .mails__mail:hover {
+  .mails__mail:hover, .action__mail:hover {
     color: #000; }
+
+.action__mail {
+  color: #fff; }
+  .action__mail:hover {
+    color: #CEAC39; }
 
 .mails__icons {
   font-size: 1.3rem;

@@ -107,7 +107,7 @@
     width: 55vw;
     font-size: 1.2rem;
     font-weight: normal;
-    color: $colorbright;
+    color: map-get($map: $color, $key: 'bright');
     background-color: $colorPrimary;
     border-radius: 15px;
     border-style: none;
@@ -208,20 +208,20 @@
     }
 }
 .title--section{
-    color: $colorbright;
+    color: map-get($map: $color, $key: 'bright');
     text-transform: uppercase;
     @media only screen and (min-width: 1024px) {
     }
 }
 /* Call to action "Seguinos" */
 .action{
-    color: $colorbright;
+    color: map-get($map: $color, $key: 'bright');
     background-color: $colorPrimary;
     text-align: center;
     padding-top: 10%;
     padding-bottom: 10%;
     @media only screen and (min-width: 1024px) {
-        color: $colorbright;
+        color: map-get($map: $color, $key: 'bright');
         background-color: $colorPrimary;
         text-align: center;
         padding-top: 7%;
@@ -235,16 +235,8 @@
     }
 }
 .action__icons{
-    color: $colorbright;
+    color: map-get($map: $color, $key: 'bright');
     font-size: 1.4rem;
-    &:hover{
-        color: $colorSecondary;
-    }
-}
-.action__mail{
-    color: $colorbright;
-    font-size: 1.4rem;
-    text-decoration: none;
     &:hover{
         color: $colorSecondary;
     }
@@ -255,13 +247,13 @@
     font-size: 1.2rem;
     font-weight: normal;
     color: $colorPrimary;
-    background-color: $colorbright;
+    background-color:  map-get($map: $color, $key: 'bright');
     border-radius: 15px;
     border-style: none;
     box-shadow: $shadowLight;
     width: 85vw;
     &:hover{
-        box-shadow: $shadowBright;
+        @include shadowWhite();
     }
     @media only screen and (min-width: 768px) {
         font-size: 1.3rem;
@@ -269,14 +261,14 @@
     }
 }
 .colorWhite{
-    color:$colorbright;
+    color:map-get($map: $color, $key: 'bright');
 }
 /* /Call to action "Contactanos" */
 /* Tabla Price Acopio */
 .prices__table{
     width: 90vw;
-    box-shadow: $shadowLight;
     border-collapse: collapse;
+    @include shadowWhite();
     @media only screen and (min-width: 768px) {
         width: 80vw;
     }
@@ -361,7 +353,15 @@
         font-weight: normal;
     }
     &:hover{
-        color: $colorDark;
+        color: map-get($map: $color, $key: 'dark');
+    }
+}
+ //extend
+.action__mail{
+    @extend .mails__mail;
+    color: map-get($map: $color, $key: 'bright');
+    &:hover{
+        color: $colorSecondary;
     }
 }
 .mails__icons{
@@ -369,7 +369,7 @@
     color: $colorMiddle;
     text-decoration: none;
     &:hover{
-        color: $colorDark;
+        color: map-get($map: $color, $key: 'dark');
     }
 }
 .contact__social{
