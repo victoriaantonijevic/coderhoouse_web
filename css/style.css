@@ -97,7 +97,7 @@ p {
       left: 5%; } }
 
 .nav__logo {
-  min-width: 23vh;
+  min-width: 33vh;
   display: flex;
   align-items: center; }
   @media only screen and (min-width: 768px) {
@@ -144,6 +144,12 @@ p {
 
 .mt2 {
   margin-top: 2vh; }
+
+.mt20 {
+  margin-top: 20vh; }
+  @media only screen and (min-width: 768px) {
+    .mt20 {
+      margin-top: 0vh; } }
 
 .mt15 {
   margin-top: 15vh; }
@@ -291,7 +297,10 @@ p {
       flex-wrap: wrap; } }
 
 .service__galery--img {
-  max-width: 28vw; }
+  max-width: 90vw; }
+  @media only screen and (min-width: 768px) {
+    .service__galery--img {
+      max-width: 28vw; } }
 
 /* /Main service index */
 /* Main column */
@@ -469,16 +478,17 @@ p {
 /* Contacto */
 .contact__details {
   display: flex;
-  align-items: center; }
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
   @media only screen and (min-width: 768px) {
     .contact__details {
       align-items: flex-start;
       flex-direction: row;
-      column-gap: 2rem;
+      align-items: top;
       justify-content: space-evenly; } }
 
 .contact__details--mails {
-  width: 25vw;
   justify-content: center; }
 
 .mails__mail, .action__mail {
