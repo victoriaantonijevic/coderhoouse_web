@@ -119,6 +119,23 @@
         width: 250px;
     }
 }
+/* Header Index */
+    header video { width: 100%; }
+    svg { 
+        width: 100%;
+        position:absolute;
+        top: 0;
+        left: 0; // needed for FF, Safari, Edge
+        height: 100%;
+    }
+    svg rect {
+        fill: white;
+    }
+    svg > rect {
+        -webkit-mask: url(#mask);
+        mask: url(#mask);
+    }
+/* /Header Index */
 /* Main intro */
 .intro{
     width: 60vw;
@@ -148,7 +165,10 @@
     }
 }
 .service__galery--img{
-    max-width: 28vw;
+    max-width: 90vw;
+    @media only screen and (min-width: 768px) {
+        max-width: 28vw;
+    }
 }
 /* /Main service index */
 /* Main column */
@@ -250,6 +270,7 @@
     font-size: 1.2rem;
     font-weight: normal;
     color: $colorPrimary;
+    text-decoration: none;
     background-color:  map-get($map: $color, $key: 'bright');
     border-radius: 15px;
     border-style: none;
@@ -257,6 +278,7 @@
     width: 85vw;
     &:hover{
         @include shadowWhite();
+        color: $colorPrimary;
     }
     @media only screen and (min-width: 768px) {
         font-size: 1.3rem;
