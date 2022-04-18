@@ -1,6 +1,12 @@
 .mt2{
     margin-top: 2vh;
 }
+.mt20{
+    margin-top: 20vh;
+    @media only screen and (min-width: 768px) {
+        margin-top: 0vh;
+    }
+}
 .mt15{
     margin-top: 15vh;
     @media only screen and (min-width: 768px) {
@@ -148,7 +154,10 @@
     }
 }
 .service__galery--img{
-    max-width: 28vw;
+    max-width: 90vw;
+    @media only screen and (min-width: 768px) {
+        max-width: 28vw;
+    }
 }
 /* /Main service index */
 /* Main column */
@@ -330,16 +339,17 @@
 /* Contacto */
 .contact__details{
     display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
     @media only screen and (min-width: 768px) {
         align-items: flex-start;
         flex-direction: row;
-        column-gap: 2rem;
+        align-items: top;
         justify-content: space-evenly;
     }
 }
 .contact__details--mails{
-    width: 25vw;
     justify-content: center;
 }
 .mails__mail{
