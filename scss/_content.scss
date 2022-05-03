@@ -236,7 +236,8 @@
     @media only screen and (min-width: 768px) {
         display: flex;
         flex-direction: row;
-        gap: 4rem;
+        gap: 0rem;
+        justify-content: space-between;
     }
 }
 .service__cosembrar__img{
@@ -251,6 +252,9 @@
 .service__cosembrar__text{
     text-align: start;
     @media only screen and (min-width: 768px) {
+        width: 45vw;
+    }
+    @media only screen and (min-width: 1024px) {
         width: 40vw;
     }
 }
@@ -853,3 +857,24 @@
     }
 }
 /* /Nosotros  */
+
+
+/* Header Index */
+header video { width: 100%; }
+svg { 
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0; // needed for FF, Safari, Edge
+    height: 100%;
+}
+svg rect {
+    fill: white;
+}
+svg > rect {
+    -webkit-mask: url(#mask);
+    mask: url(#mask);
+}
+/* /Header Index */
+
+
