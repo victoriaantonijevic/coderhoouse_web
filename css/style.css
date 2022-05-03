@@ -377,7 +377,8 @@ p {
     .service__cosembrar {
       display: flex;
       flex-direction: row;
-      gap: 4rem; } }
+      gap: 0rem;
+      justify-content: space-between; } }
 
 @media only screen and (min-width: 768px) {
   .service__cosembrar__img {
@@ -390,6 +391,9 @@ p {
 .service__cosembrar__text {
   text-align: start; }
   @media only screen and (min-width: 768px) {
+    .service__cosembrar__text {
+      width: 45vw; } }
+  @media only screen and (min-width: 1024px) {
     .service__cosembrar__text {
       width: 40vw; } }
 
@@ -978,6 +982,25 @@ p {
       font-size: 3.7rem; } }
 
 /* /Nosotros  */
+/* Header Index */
+header video {
+  width: 100%; }
+
+svg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%; }
+
+svg rect {
+  fill: white; }
+
+svg > rect {
+  -webkit-mask: url(#mask);
+  mask: url(#mask); }
+
+/* /Header Index */
 #footer {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
