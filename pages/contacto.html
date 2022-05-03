@@ -45,6 +45,9 @@
                         <li class="nav-item hover--bold">
                             <a class="nav-link" href="agroinsumos.html">Agroinsumos</a>
                         </li>
+                        <li class="nav-item hover--bold">
+                            <a class="nav-link" href="semillas.html">Semillas</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" id="nav__link--active" aria-current="page" href="contacto.html">Contacto</a>
                         </li>
@@ -61,79 +64,65 @@
                     </div>
                 </div>
             </nav>
-            <div class="bg__primary">
-                <img src="../img/contactoCosembrar.jpg" alt="Contacto Cosembrar" class="section__img" />
+            <div class="position__r">
+                <img src="../img/contactoCosembrar.jpeg" alt="Contacto Cosembrar" class="section__img" />
+                <div class="elementor-background-overlay"></div>
             </div>
             <div class="header__title">
-                <h1 class="title--section ms-5">Contacto, Cosembrar</h1>
+                <h5 class="title--section">Contacto</h5>
             </div>
         </header>
         <main id="main">
             <section>
 <!--Mapa-->
-                <div class="content__map mt15 mb15 mr5 ml5">
+                <div class="content__map mt15 mb10">
                     <div class="map--responsive">
-                        <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Cosembrar+SA+-+Acopio+de+Cereales+Y+Agroquimicos,+San+Antonio+de+Areco,+Buenos+Aires,+Argentina&amp;aq=0&amp;oq=Cosembrar,++San+Antonio+de+Areco,+Buenos+Aires&amp;sll=-34.227771,-59.413719&amp;sspn=0.04187,0.077162&amp;gl=US&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=-34.257946,-59.482277&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13191.068269676354!2d-59.4882296640625!3d-34.25448690057635!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x54d6272a3a8b694f!2sCosembrar%20SA%20-%20Acopio%20de%20Cereales%20Y%20Agroqu%C3%ADmicos!5e0!3m2!1ses!2ses!4v1651515632128!5m2!1ses!2ses" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div>
-                        <div>
-                            <a href="https://www.google.com/maps?ll=-34.257946,-59.482277&z=17&t=m&hl=en&gl=US&mapclient=embed&cid=6113116606526351695" target="_blank" class="contact__link">
-                                <p class="wow pulse animated animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s">
-                                    <i class="bi bi-geo-alt-fill icon__primary"></i>
-                                </p>
-                                <p>Ruta 31 y Carlos Merti 1<br>San Antonio de Areco, <br>Buenos Aires, Argentina</p>
-                            </a>
-                        </div>
-                        <p><strong>02326 45 3574</strong></p>
+                        <a href="https://www.google.com/maps?ll=-34.257946,-59.482277&z=17&t=m&hl=en&gl=US&mapclient=embed&cid=6113116606526351695" target="_blank" class="contact__link">
+                            <p class="wow pulse animated animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s">
+                                <i class="bi bi-geo-alt-fill icon__primary"></i>
+                            </p>
+                            <p>Ruta 31 y Carlos Merti 1<br>San Antonio de Areco, <br>Buenos Aires, Argentina</p>
+                        </a>
+                        <p class="map--responsive__phone"><strong>02326 45 3574</strong></p>
                     </div>
                 </div>
 <!--/Mapa-->
 <!--Email y Redes Sociales-->
-                <div class="contact__details mb15 ml5">
-                    <div>
-                        <h2 class="text-center mb-5 title--center">E-mail</h2>
-                        <div class="text-center mb-3 contact__details--mails">
-                            <h3>Acopio</h3>
-                            <a href="mailto:jorgerossi@cosembrar.com.ar" class="mails__mail">jorgerossi@cosembrar.com.ar</a>
-                            <br>
-                            <a href="mailto:facundo@cosembrar.com.ar" class="mails__mail">facundo@cosembrar.com.ar</a>
-                            <br>
-                            <a href="mailto:matiasramirez@cosembrar.com.ar" class="mails__mail">matiasramirez@cosembrar.com.ar</a>
-                        </div>
-                        <div class="text-center mb-3 contact__details--mails">
-                            <h3>Agroinsumos</h3>
-                            <a href="mailto:ezequiel@cosembrar.com.ar" class="mails__mail">ezequiel@cosembrar.com.ar</a>
-                            <br>
-                            <a href="mailto:federico@cosembrar.com.ar" class="mails__mail">federico@cosembrar.com.ar</a>
-                        </div>
-                        <div class="text-center mb-3 contact__details--mails">
-                            <h3>Consultas generales</h3>
-                            <a href="mailto:cosembrar@cosembrar.com.ar" class="mails__mail">cosembrar@cosembrar.com.ar</a>
-                        </div>
-                        <div class="text-center contact__details--mails">
-                            <h3>Envio de Curriculum vitae</h3>
-                            <a href="mailto:cv@cosembrar.com.ar" class="mails__mail">cv@cosembrar.com.ar</a>
-                        </div>
+                <div class="contact__content mb15">
+                    <div class="text-center mb-3 contact__content__mails">
+                        <i class="bi bi-envelope mb-3 icons__contact"></i>
+                        <h3 class="contact__content__mails--title">General</h3>
+                        <a href="mailto:cosembrar@cosembrar.com.ar" class="contact__content__mails--mail">cosembrar@cosembrar.com.ar</a>
                     </div>
-                    <div class="text-center">
-                        <h2 class="text-center mb-5 title--center mt20">Redes Sociales</h2>
-                        <div class="contact__social">
-                            <a href="https://www.instagram.com/cosembrar" target="_blank" rel="noopener noreferrer" class="mails__icons contact__link">
-                                <p class="me-2 icon__animation"><i class="bi bi-instagram"></i></p>
-                                instagram.com/cosembrar
-                            </a>
-                            <a href="https://www.twitter.com/cosembrar" target="_blank" rel="noopener noreferrer" class="mails__icons contact__link">
-                                <p class="me-2 icon__animation"><i class="bi bi-twitter"></i></p>
-                                twitter.com/cosembrar
-                            </a>
-                            <a href="https://www.facebook.com/cosembrar" target="_blank" rel="noopener noreferrer" class="mails__icons contact__link">
-                                <p class="me-2 icon__animation"><i class="bi bi-facebook"></i></p>
-                                facebook.com/cosembrar
-                            </a>
-                        </div>
+                    <div class="text-center mb-3 contact__content__mails">
+                        <i class="bi bi-envelope mb-3 icons__contact"></i>
+                        <h3 class="contact__content__mails--title">Acopio</h3>
+                        <a href="mailto:jorgerossi@cosembrar.com.ar" class="contact__content__mails--mail">jorgerossi@cosembrar.com.ar</a>
+                        <br>
+                        <a href="mailto:facundo@cosembrar.com.ar" class="contact__content__mails--mail">facundo@cosembrar.com.ar</a>
+                        <br>
+                        <a href="mailto:matiasramirez@cosembrar.com.ar" class="contact__content__mails--mail">matiasramirez@cosembrar.com.ar</a>
+                    </div>
+                    <div class="text-center mb-3 contact__content__mails">
+                        <i class="bi bi-envelope mb-3 icons__contact"></i>
+                        <h3 class="contact__content__mails--title">Agroinsumos</h3>
+                        <a href="mailto:ezequiel@cosembrar.com.ar" class="contact__content__mails--mail">ezequiel@cosembrar.com.ar</a>
+                        <br>
+                        <a href="mailto:federico@cosembrar.com.ar" class="contact__content__mails--mail">federico@cosembrar.com.ar</a>
+                    </div>
+                    <div class="text-center mb-3 contact__content__mails">
+                        <i class="bi bi-envelope mb-3 icons__contact"></i>
+                        <h3 class="contact__content__mails--title">Trabajo</h3>
+                        <a href="mailto:cv@cosembrar.com.ar" class="contact__content__mails--mail">cv@cosembrar.com.ar</a>
                     </div>
                 </div>
 <!--/Email y Redes Sociales-->
+<!-- Whatsapp float -->
+<a href="https://wa.me/34691675782" class="btn-float"><i class="bi bi-whatsapp brand--whatsapp--float"></i> <span class="hidden">¿Preguntas? Escribinos!</span></a>
+<!-- /Whatsapp float -->
 <!-- Call to action -->
                 <div class="text-center action">
                     <h2 class="wow fadeInDown">¿Querés sumarte a nuestro equipo?</h2>
@@ -158,6 +147,7 @@
                     <li><a href="nosotros.html" class="footer__content__item__link">Nosotros</a></li>
                     <li><a href="acopio.html" class="footer__content__item__link">Acopio</a></li>
                     <li><a href="agroinsumos.html" class="footer__content__item__link">Agroinsumos</a></li>
+                    <li><a href="semillas.html" class="footer__content__item__link">Semillas</a></li>
                     <li><a href="contacto.html" class="footer__content__item__link--active">Contacto</a></li>
                 </div>
             </div>

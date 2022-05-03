@@ -1,17 +1,15 @@
 // variables
-$colorPrimary:#536C43;
-$colorSecondary:#CEAC39;
+$colorPrimary:#367c2b;
+$colorSecondary:#ffc107;
+$colorBright:#fff;
+$colorDark:#000;
 $colorLight:#999;
 $colorMiddle:#444;
 $colorWhatsapp:#65d258;
-$shadowLight:0px 0px 25px #999;
+$shadowLight:0px 8px 15px rgba(0, 0, 0, 0.1);
+$shadowLight--hover:0px 15px 20px rgba(0, 0, 0, 0.3);
 $shadowMiddle:0px 0px 25px #304622;
 //mixin
 @mixin shadowWhite (){
     box-shadow: 0px 0px 25px #fff;
 }
-//map
-$color:(
-    'dark':#000,
-    'bright':#fff
-);

@@ -2,7 +2,7 @@
     display: flex;
     position: absolute;
     align-items: center;
-    background-color: map-get($map: $color, $key: 'bright');
+    background-color: $colorBright;
     box-shadow: $shadowLight;
     padding: 2% 3% 3% 3%;
     width: 100vw;
@@ -27,6 +27,7 @@
 }
 #nav__link--active{
     color: $colorSecondary;
+    font-weight: 600;
 }
 .hover--bold:hover{
     font-weight: 500;
