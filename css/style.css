@@ -1099,6 +1099,53 @@ svg > rect {
       padding: 7px 20px 9px; } }
 
 /* /Header Index */
+/* 404 */
+.error__text {
+  width: 90vw;
+  margin-left: 5vw;
+  order: 2;
+  margin-top: 2rem; }
+  @media only screen and (min-width: 325px) {
+    .error__text {
+      margin-top: 2rem;
+      order: 2; } }
+  @media only screen and (min-width: 768px) {
+    .error__text {
+      width: 45vw;
+      order: 1;
+      margin-top: 12%; } }
+
+.error__images {
+  justify-content: center;
+  display: flex;
+  order: 1;
+  margin-bottom: 5%;
+  margin-top: 12%; }
+  @media only screen and (min-width: 768px) {
+    .error__images {
+      order: 2; } }
+
+.error__link__more {
+  font-weight: 500;
+  color: #ffc107;
+  font-size: 1rem;
+  text-decoration: none;
+  display: block;
+  margin-top: 1rem; }
+  .error__link__more:hover {
+    color: #444; }
+  @media only screen and (min-width: 325px) {
+    .error__link__more {
+      font-size: 1.2rem; } }
+  @media only screen and (min-width: 768px) {
+    .error__link__more {
+      font-size: 1.3rem;
+      display: inline-block; } }
+  @media only screen and (min-width: 1024px) {
+    .error__link__more {
+      font-size: 1.5rem; } }
+
+/* /404 */
 #footer {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
