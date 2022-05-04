@@ -17,7 +17,10 @@
     }
 }
 .mt15{
-    margin-top: 15vh;
+    margin-top: 10vh;
+    @media only screen and (min-width: 325px) {
+        margin-top: 15vh;
+    }
     @media only screen and (min-width: 768px) {
         margin-top: 20vh;
     }
@@ -51,7 +54,10 @@
     }
 }
 .mb15{
-    margin-bottom: 15vh;
+    margin-bottom: 8vh;
+    @media only screen and (min-width: 325px) {
+        margin-bottom: 15vh;
+    }
 }
 .mb20{
     margin-bottom: 20vh;
@@ -71,6 +77,9 @@
 .contact__link{
     display: flex;
     text-decoration: none;
+    justify-content: center;
+    @media only screen and (min-width: 325px) {
+    }
 }
 .color--middle{
     color: $colorMiddle;
@@ -188,8 +197,10 @@
 }
 /* Main intro */
 .intro{
-    width: 60vw;
+    width: 80vw;
     text-align: center;
+    margin-top: 6%;
+    margin-bottom: 10%;
     @media only screen and (min-width: 768px) {
         width: 50vw;
     }
@@ -232,7 +243,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
+    @media only screen and (min-width: 325px) {
+        gap: 2rem;
+    }
     @media only screen and (min-width: 768px) {
         display: flex;
         flex-direction: row;
@@ -261,10 +275,13 @@
 .link__more{
     font-weight: 500;
     color: $colorSecondary;
-    font-size: 1rem;
+    font-size: 0.80rem;
     text-decoration: none;
     &:hover{
         color: $colorMiddle;
+    }
+    @media only screen and (min-width: 325px) {
+        font-size: 1rem;
     }
     @media only screen and (min-width: 768px) {
         font-size: 1.5rem;
@@ -294,7 +311,10 @@
     }
 }
 .products__galery__content__img{
-    max-width: 60vw;
+    max-width: 90vw;
+    @media only screen and (min-width: 325px) {
+        max-width: 60vw;
+    }
     @media only screen and (min-width: 768px) {
         max-width: 27vw;
     }
@@ -360,9 +380,12 @@
 }
 .title--section{
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: $colorBright;
     text-shadow: 2px 2px 4px rgba($colorDark, 0.45);
+    @media only screen and (min-width: 325px) {
+        font-size: 2.5rem;
+    }
     @media only screen and (min-width: 768px) {
         font-size: 2.5rem;
     }
@@ -535,8 +558,11 @@
 .contact__content{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 0rem;
     text-align: center;
+    @media only screen and (min-width: 325px) {
+        gap: 2rem;
+    }
     @media only screen and (min-width: 768px) {
         grid-template-columns: 1fr 1fr;
     }
@@ -634,8 +660,12 @@
     display: flex;
 }
 .service__detail__img{
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 220px;
+    max-width: 280px;
+    @media only screen and (min-width: 325px) {
+        min-width: 300px;
+        max-width: 300px;
+    }
     @media only screen and (min-width: 768px) {
         min-width: 300px;
         max-width: 300px;
@@ -663,8 +693,12 @@
     }
 }
 .img__intro{
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 220px;
+    max-width: 220px;
+    @media only screen and (min-width: 325px) {
+        min-width: 300px;
+        max-width: 300px;
+    }
     @media only screen and (min-width: 768px) {
         min-width: 300px;
         max-width: 300px;
@@ -681,14 +715,12 @@
 .img__intro__rounded{
     position: absolute;
     border-radius: 50%;
-    left: 20px;
-    top: 200px;
-    width: 120px;
-    height: 120px;
-    min-width: 120px;
-    min-height: 120px;
-    max-width: 120px;
-    max-height: 120px;
+    left: 10px;
+    top: 160px;
+    width: 90px;
+    height: 90px;
+    max-width: 90px;
+    max-height: 90px;
     border: 3px solid #fff;
     box-shadow: $shadowLight;
     @media only screen and (min-width: 768px) {
@@ -857,8 +889,6 @@
     }
 }
 /* /Nosotros  */
-
-
 /* Header Index */
 header video { width: 100%; }
 svg { 
@@ -866,7 +896,7 @@ svg {
     position:absolute;
     top: 0;
     left: 0; // needed for FF, Safari, Edge
-    height: 100%;
+    height: 101%;
 }
 svg rect {
     fill: white;
@@ -875,6 +905,52 @@ svg > rect {
     -webkit-mask: url(#mask);
     mask: url(#mask);
 }
+.video__index{
+    object-fit: cover;
+}
+.header__index{
+    height: 60vh;
+    @media only screen and (min-width: 768px) {
+        height: 100%;
+    }
+}
+.header__title__index {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    left: 5vw;
+    margin-top: 45%;
+    display: flex;
+    flex-direction: column;
+    @media only screen and (min-width: 325px) {
+        margin-top: 21vh;
+    }
+    @media only screen and (min-width: 768px) {
+        margin-top: 18vh;
+    }
+    @media only screen and (min-width: 1024px) {
+        margin-top: 21vh;
+    }
+}
+.btn__index{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $colorPrimary;
+    background-color:  $colorBright;
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: $shadowLight;
+    padding: 9px 30px 11px;
+    margin-top: 2rem;
+    &:hover{
+        @include shadowWhite();
+        color: $colorPrimary;
+    }
+    @media only screen and (min-width: 768px) {
+        font-size: 1.3rem;
+        padding: 7px 20px 9px;
+    }
+}
 /* /Header Index */
-
-
