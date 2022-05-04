@@ -959,3 +959,51 @@ svg > rect {
     }
 }
 /* /Header Index */
+/* 404 */
+.error__text{
+    width: 90vw;
+    margin-left: 5vw;
+    order: 2;
+    margin-top: 2rem;
+    @media only screen and (min-width: 325px) {
+        margin-top: 2rem;
+        order: 2;
+    }
+    @media only screen and (min-width: 768px) {
+        width: 45vw;
+        order: 1;
+        margin-top: 12%;
+    }
+}
+.error__images{
+    justify-content: center;
+    display: flex;
+    order: 1;
+    margin-bottom: 5%;
+    margin-top: 12%;
+    @media only screen and (min-width: 768px) {
+        order: 2;
+    }
+}
+.error__link__more{
+    font-weight: 500;
+    color: $colorSecondary;
+    font-size: 1rem;
+    text-decoration: none;
+    display: block;
+    margin-top: 1rem;
+    &:hover{
+        color: $colorMiddle;
+    }
+    @media only screen and (min-width: 325px) {
+        font-size: 1.2rem;
+    }
+    @media only screen and (min-width: 768px) {
+        font-size: 1.3rem;
+        display: inline-block;
+    }
+    @media only screen and (min-width: 1024px) {
+        font-size: 1.5rem;
+    }
+}
+/* /404 */
