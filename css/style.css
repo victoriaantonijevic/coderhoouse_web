@@ -155,6 +155,20 @@ p {
     .ul__mt {
       margin-top: 0rem; } }
 
+#header {
+  grid-area: header; }
+
+#main {
+  grid-area: main; }
+
+#footer {
+  grid-area: footer; }
+
+.header {
+  display: flex;
+  position: relative; }
+
+/* Margenes generales */
 .mt2 {
   margin-top: 2vh; }
 
@@ -228,16 +242,73 @@ p {
 .ml5 {
   margin-left: 5%; }
 
-.display__i {
-  display: inline; }
+/* /Margenes generales */
+/* Header Index */
+header video {
+  width: 100%; }
 
-.contact__link {
+svg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 101%; }
+
+svg rect {
+  fill: white; }
+
+svg > rect {
+  -webkit-mask: url(#mask);
+  mask: url(#mask); }
+
+.video__index {
+  object-fit: cover; }
+
+.header__index {
+  height: 60vh; }
+  @media only screen and (min-width: 768px) {
+    .header__index {
+      height: 100%; } }
+
+.header__title__index {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  left: 5vw;
+  margin-top: 45%;
   display: flex;
-  text-decoration: none;
-  justify-content: center; }
+  flex-direction: column; }
+  @media only screen and (min-width: 325px) {
+    .header__title__index {
+      margin-top: 21vh; } }
+  @media only screen and (min-width: 768px) {
+    .header__title__index {
+      margin-top: 18vh; } }
+  @media only screen and (min-width: 1024px) {
+    .header__title__index {
+      margin-top: 21vh; } }
 
-.color--middle {
-  color: #444; }
+.btn__index {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #367c2b;
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  padding: 9px 30px 11px;
+  margin-top: 2rem;
+  z-index: 9000; }
+  .btn__index:hover {
+    color: #367c2b;
+    background-color: #fff;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3); }
+  @media only screen and (min-width: 768px) {
+    .btn__index {
+      font-size: 1.3rem;
+      padding: 7px 20px 9px; } }
 
 .icon__secondary {
   color: #ffc107;
@@ -245,27 +316,7 @@ p {
   margin-right: 1rem;
   vertical-align: middle; }
 
-.contains {
-  font-family: 'Poppins', sans-serif;
-  min-height: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "header" "main" "footer"; }
-
-#header {
-  grid-area: header; }
-
-#main {
-  grid-area: main; }
-
-#footer {
-  grid-area: footer; }
-
-.header {
-  display: flex;
-  position: relative; }
-
+/* /Header Index */
 .header__title {
   position: absolute;
   align-items: center;
@@ -289,6 +340,14 @@ p {
       display: flex;
       width: 100vw; } }
 
+.contains {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header" "main" "footer"; }
+
 .position__r {
   position: relative; }
 
@@ -311,21 +370,6 @@ p {
     .hidden {
       display: inline-block; } }
 
-/* Portada section img */
-.section__img {
-  object-position: center top;
-  width: 100vw;
-  height: 50vh;
-  object-fit: cover; }
-  @media only screen and (min-width: 768px) {
-    .section__img {
-      width: 100vw;
-      height: 80vh; } }
-
-.bg__primary {
-  background-color: rgba(40, 67, 23, 0.78); }
-
-/* /Portada section img */
 .header__subtitle {
   display: none; }
   @media only screen and (min-width: 768px) {
@@ -349,6 +393,21 @@ p {
     .header__btn {
       width: 250px; } }
 
+/* Portada section img */
+.section__img {
+  object-position: center top;
+  width: 100vw;
+  height: 50vh;
+  object-fit: cover; }
+  @media only screen and (min-width: 768px) {
+    .section__img {
+      width: 100vw;
+      height: 80vh; } }
+
+.bg__primary {
+  background-color: rgba(40, 67, 23, 0.78); }
+
+/* /Portada section img */
 /* Main intro */
 .intro {
   width: 80vw;
@@ -444,7 +503,73 @@ p {
   vertical-align: middle; }
 
 /* /Main service index */
+/* Nosotros  */
+.us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  margin-left: 5vw;
+  margin-right: 5vw; }
+  @media only screen and (min-width: 768px) {
+    .us {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; } }
+
+@media only screen and (min-width: 768px) {
+  .us__img {
+    width: 40vw; } }
+
+.style__h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #444; }
+  @media only screen and (min-width: 768px) {
+    .style__h1 {
+      font-size: 2.5rem; } }
+  @media only screen and (min-width: 1024px) {
+    .style__h1 {
+      font-size: 3.7rem; } }
+
+.display__i {
+  display: inline; }
+
+/* /Nosotros  */
+/* Tabla Price Acopio */
+.prices__table {
+  width: 90vw; }
+  @media only screen and (min-width: 768px) {
+    .prices__table {
+      width: 80vw; } }
+  @media only screen and (min-width: 1024px) {
+    .prices__table {
+      width: 60vw; } }
+
+.prices__table__td {
+  padding: 2%;
+  text-align: center; }
+
+/* /Tabla Price Acopio */
 /* semillas (galeria productos) */
+.products {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem; }
+  @media only screen and (min-width: 768px) {
+    .products {
+      gap: 4rem; } }
+
+.products__brand__img {
+  width: 30vw; }
+  @media only screen and (min-width: 768px) {
+    .products__brand__img {
+      width: 15vw; } }
+
 .products__galery {
   margin-left: 5vw;
   margin-right: 5vw; }
@@ -641,22 +766,10 @@ p {
 .colorWhite {
   color: #fff; }
 
+.color--middle {
+  color: #444; }
+
 /* /Call to action "Contactanos" */
-/* Tabla Price Acopio */
-.prices__table {
-  width: 90vw; }
-  @media only screen and (min-width: 768px) {
-    .prices__table {
-      width: 80vw; } }
-  @media only screen and (min-width: 1024px) {
-    .prices__table {
-      width: 60vw; } }
-
-.prices__table__td {
-  padding: 2%;
-  text-align: center; }
-
-/* /Tabla Price Acopio */
 /* Mapa */
 .content__map {
   display: flex;
@@ -701,6 +814,11 @@ p {
   @media only screen and (min-width: 768px) {
     .map--responsive__phone {
       font-size: 1.2rem; } }
+
+.contact__link {
+  display: flex;
+  text-decoration: none;
+  justify-content: center; }
 
 /* Mapa */
 /* Contacto */
@@ -818,20 +936,6 @@ p {
       min-width: 430px;
       max-width: 430px;
       margin-top: -5%; } }
-
-.service__detail__nose {
-  min-width: 300px;
-  max-width: 300px;
-  justify-content: center;
-  display: flex; }
-  @media only screen and (min-width: 768px) {
-    .service__detail__nose {
-      min-width: 300px;
-      max-width: 300px; } }
-  @media only screen and (min-width: 1024px) {
-    .service__detail__nose {
-      min-width: 430px;
-      max-width: 430px; } }
 
 .img__intro, .img__intro__circle {
   min-width: 220px;
@@ -983,122 +1087,6 @@ p {
     .cotizacion__granos {
       max-width: 100%; } }
 
-/* Semillas  */
-.products {
-  display: flex;
-  flex-direction: row;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 1rem; }
-  @media only screen and (min-width: 768px) {
-    .products {
-      gap: 4rem; } }
-
-.products__brand__img {
-  width: 30vw; }
-  @media only screen and (min-width: 768px) {
-    .products__brand__img {
-      width: 15vw; } }
-
-/* /Semillas  */
-/* Nosotros  */
-.us {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2rem;
-  margin-left: 5vw;
-  margin-right: 5vw; }
-  @media only screen and (min-width: 768px) {
-    .us {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between; } }
-
-@media only screen and (min-width: 768px) {
-  .us__img {
-    width: 40vw; } }
-
-.style__h1 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #444; }
-  @media only screen and (min-width: 768px) {
-    .style__h1 {
-      font-size: 2.5rem; } }
-  @media only screen and (min-width: 1024px) {
-    .style__h1 {
-      font-size: 3.7rem; } }
-
-/* /Nosotros  */
-/* Header Index */
-header video {
-  width: 100%; }
-
-svg {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 101%; }
-
-svg rect {
-  fill: white; }
-
-svg > rect {
-  -webkit-mask: url(#mask);
-  mask: url(#mask); }
-
-.video__index {
-  object-fit: cover; }
-
-.header__index {
-  height: 60vh; }
-  @media only screen and (min-width: 768px) {
-    .header__index {
-      height: 100%; } }
-
-.header__title__index {
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  left: 5vw;
-  margin-top: 45%;
-  display: flex;
-  flex-direction: column; }
-  @media only screen and (min-width: 325px) {
-    .header__title__index {
-      margin-top: 21vh; } }
-  @media only screen and (min-width: 768px) {
-    .header__title__index {
-      margin-top: 18vh; } }
-  @media only screen and (min-width: 1024px) {
-    .header__title__index {
-      margin-top: 21vh; } }
-
-.btn__index {
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #367c2b;
-  background-color: #fff;
-  border-radius: 5px;
-  border-style: none;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  padding: 9px 30px 11px;
-  margin-top: 2rem; }
-  .btn__index:hover {
-    box-shadow: 0px 0px 25px #fff;
-    color: #367c2b; }
-  @media only screen and (min-width: 768px) {
-    .btn__index {
-      font-size: 1.3rem;
-      padding: 7px 20px 9px; } }
-
-/* /Header Index */
 /* 404 */
 .error__text {
   width: 90vw;

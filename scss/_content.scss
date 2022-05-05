@@ -1,3 +1,17 @@
+#header{
+    grid-area: header;
+}
+#main{
+    grid-area: main;
+}
+#footer{
+    grid-area: footer;
+}
+.header {
+    display: flex;
+    position: relative;
+}
+/* Margenes generales */
 .mt2{
     margin-top: 2vh;
 }
@@ -71,18 +85,72 @@
 .ml5{
     margin-left: 5%;
 }
-.display__i{
-    display: inline;
+/* /Margenes generales */
+/* Header Index */
+header video { width: 100%; }
+svg { 
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0; // needed for FF, Safari, Edge
+    height: 101%;
 }
-.contact__link{
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
-    @media only screen and (min-width: 325px) {
+svg rect {
+    fill: white;
+}
+svg > rect {
+    -webkit-mask: url(#mask);
+    mask: url(#mask);
+}
+.video__index{
+    object-fit: cover;
+}
+.header__index{
+    height: 60vh;
+    @media only screen and (min-width: 768px) {
+        height: 100%;
     }
 }
-.color--middle{
-    color: $colorMiddle;
+.header__title__index {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    left: 5vw;
+    margin-top: 45%;
+    display: flex;
+    flex-direction: column;
+    @media only screen and (min-width: 325px) {
+        margin-top: 21vh;
+    }
+    @media only screen and (min-width: 768px) {
+        margin-top: 18vh;
+    }
+    @media only screen and (min-width: 1024px) {
+        margin-top: 21vh;
+    }
+}
+.btn__index{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $colorBright;
+    background-color: $colorPrimary;
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: $shadowLight;
+    padding: 9px 30px 11px;
+    margin-top: 2rem;
+    z-index: 9000;
+    &:hover{
+        color: $colorPrimary;
+        background-color: $colorBright;
+        box-shadow: $shadowLight--hover;
+    }
+    @media only screen and (min-width: 768px) {
+        font-size: 1.3rem;
+        padding: 7px 20px 9px;
+    }
 }
 .icon__secondary{
     color: $colorSecondary;
@@ -90,27 +158,7 @@
     margin-right: 1rem;
     vertical-align: middle;
 }
-.contains{
-    font-family: 'Poppins', sans-serif;
-    min-height: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "header" "main" "footer";
-}
-#header{
-    grid-area: header;
-}
-#main{
-    grid-area: main;
-}
-#footer{
-    grid-area: footer;
-}
-.header {
-    display: flex;
-    position: relative;
-}
+/* /Header Index */
 .header__title {
     position: absolute;
     align-items: center;
@@ -134,6 +182,14 @@
         width: 100vw;
     }
 }
+.contains{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header" "main" "footer";
+}
 .position__r{
     position: relative;
 }
@@ -156,21 +212,6 @@
         display: inline-block;
     }
 }
-/* Portada section img */
-.section__img{
-    object-position: center top;
-    width: 100vw;
-    height: 50vh;
-    object-fit: cover;
-    @media only screen and (min-width: 768px) {
-        width: 100vw;
-        height: 80vh;
-    }
-}
-.bg__primary{
-    background-color: rgba(40,67,23,0.78);
-}
-/* /Portada section img */
 .header__subtitle{
     display: none;
     @media only screen and (min-width: 768px) {
@@ -195,6 +236,21 @@
         width: 250px;
     }
 }
+/* Portada section img */
+.section__img{
+    object-position: center top;
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+    @media only screen and (min-width: 768px) {
+        width: 100vw;
+        height: 80vh;
+    }
+}
+.bg__primary{
+    background-color: rgba(40,67,23,0.78);
+}
+/* /Portada section img */
 /* Main intro */
 .intro{
     width: 80vw;
@@ -292,7 +348,74 @@
     vertical-align: middle;
 }
 /* /Main service index */
+/* Nosotros  */
+.us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.us__img{
+    @media only screen and (min-width: 768px) {
+        width: 40vw;
+    }
+}
+.style__h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #444;
+    @media only screen and (min-width: 768px) {
+        font-size: 2.5rem;
+    }
+    @media only screen and (min-width: 1024px) {
+        font-size: 3.7rem;
+    }
+}
+.display__i{
+    display: inline;
+}
+/* /Nosotros  */
+/* Tabla Price Acopio */
+.prices__table{
+    width: 90vw;
+    @media only screen and (min-width: 768px) {
+        width: 80vw;
+    }
+    @media only screen and (min-width: 1024px) {
+        width: 60vw;
+    }
+}
+.prices__table__td{
+    padding: 2%;
+    text-align: center;
+}
+/* /Tabla Price Acopio */
 /* semillas (galeria productos) */
+.products {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+    @media only screen and (min-width: 768px) {
+        gap: 4rem;
+    }
+}
+.products__brand__img {
+    width: 30vw;
+    @media only screen and (min-width: 768px) {
+        width: 15vw;
+    }
+}
 .products__galery{
     margin-left: 5vw;
     margin-right: 5vw;
@@ -492,22 +615,10 @@
 .colorWhite{
     color: $colorBright;
 }
+.color--middle{
+    color: $colorMiddle;
+}
 /* /Call to action "Contactanos" */
-/* Tabla Price Acopio */
-.prices__table{
-    width: 90vw;
-    @media only screen and (min-width: 768px) {
-        width: 80vw;
-    }
-    @media only screen and (min-width: 1024px) {
-        width: 60vw;
-    }
-}
-.prices__table__td{
-    padding: 2%;
-    text-align: center;
-}
-/* /Tabla Price Acopio */
 /* Mapa */
 .content__map{
     display: flex;
@@ -551,6 +662,13 @@
     text-align: center;
     @media only screen and (min-width: 768px) {
         font-size: 1.2rem;
+    }
+}
+.contact__link{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    @media only screen and (min-width: 325px) {
     }
 }
 /* Mapa */
@@ -676,20 +794,6 @@
         min-width: 430px;
         max-width: 430px;
         margin-top: -5%;
-    }
-}
-.service__detail__nose{
-    min-width: 300px;
-    max-width: 300px;
-    justify-content: center;
-    display: flex;
-    @media only screen and (min-width: 768px) {
-        min-width: 300px;
-        max-width: 300px;
-    }
-    @media only screen and (min-width: 1024px) {
-        min-width: 430px;
-        max-width: 430px;
     }
 }
 .img__intro{
@@ -843,122 +947,6 @@
         max-width: 100%;
     }
 }
-/* Semillas  */
-.products {
-    display: flex;
-    flex-direction: row;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 1rem;
-    @media only screen and (min-width: 768px) {
-        gap: 4rem;
-    }
-}
-.products__brand__img {
-    width: 30vw;
-    @media only screen and (min-width: 768px) {
-        width: 15vw;
-    }
-}
-/* /Semillas  */
-/* Nosotros  */
-.us{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    @media only screen and (min-width: 768px) {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-.us__img{
-    @media only screen and (min-width: 768px) {
-        width: 40vw;
-    }
-}
-.style__h1{
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #444;
-    @media only screen and (min-width: 768px) {
-        font-size: 2.5rem;
-    }
-    @media only screen and (min-width: 1024px) {
-        font-size: 3.7rem;
-    }
-}
-/* /Nosotros  */
-/* Header Index */
-header video { width: 100%; }
-svg { 
-    width: 100%;
-    position:absolute;
-    top: 0;
-    left: 0; // needed for FF, Safari, Edge
-    height: 101%;
-}
-svg rect {
-    fill: white;
-}
-svg > rect {
-    -webkit-mask: url(#mask);
-    mask: url(#mask);
-}
-.video__index{
-    object-fit: cover;
-}
-.header__index{
-    height: 60vh;
-    @media only screen and (min-width: 768px) {
-        height: 100%;
-    }
-}
-.header__title__index {
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    left: 5vw;
-    margin-top: 45%;
-    display: flex;
-    flex-direction: column;
-    @media only screen and (min-width: 325px) {
-        margin-top: 21vh;
-    }
-    @media only screen and (min-width: 768px) {
-        margin-top: 18vh;
-    }
-    @media only screen and (min-width: 1024px) {
-        margin-top: 21vh;
-    }
-}
-.btn__index{
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    color: $colorPrimary;
-    background-color:  $colorBright;
-    border-radius: 5px;
-    border-style: none;
-    box-shadow: $shadowLight;
-    padding: 9px 30px 11px;
-    margin-top: 2rem;
-    &:hover{
-        @include shadowWhite();
-        color: $colorPrimary;
-    }
-    @media only screen and (min-width: 768px) {
-        font-size: 1.3rem;
-        padding: 7px 20px 9px;
-    }
-}
-/* /Header Index */
 /* 404 */
 .error__text{
     width: 90vw;
