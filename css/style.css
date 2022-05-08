@@ -103,7 +103,6 @@ p {
   min-width: 22vh; }
   @media only screen and (min-width: 401px) {
     .nav__logo {
-      min-width: 33vh;
       display: flex;
       align-items: center; } }
   @media only screen and (min-width: 768px) {
@@ -242,6 +241,9 @@ p {
 .ml5 {
   margin-left: 5%; }
 
+.ts {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45); }
+
 /* /Margenes generales */
 /* Header Index */
 header video {
@@ -265,18 +267,19 @@ svg > rect {
   object-fit: cover; }
 
 .header__index {
-  height: 60vh; }
+  height: 60vh;
+  justify-content: center; }
   @media only screen and (min-width: 768px) {
     .header__index {
-      height: 100%; } }
+      height: 100%;
+      justify-content: start; } }
 
 .header__title__index {
   position: absolute;
   align-items: center;
   justify-content: center;
   text-align: center;
-  left: 5vw;
-  margin-top: 45%;
+  margin-top: 40%;
   display: flex;
   flex-direction: column; }
   @media only screen and (min-width: 325px) {
@@ -284,7 +287,8 @@ svg > rect {
       margin-top: 21vh; } }
   @media only screen and (min-width: 768px) {
     .header__title__index {
-      margin-top: 18vh; } }
+      margin-top: 18vh;
+      left: 5vw; } }
   @media only screen and (min-width: 1024px) {
     .header__title__index {
       margin-top: 21vh; } }
@@ -299,7 +303,7 @@ svg > rect {
   border-style: none;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   padding: 9px 30px 11px;
-  margin-top: 2rem;
+  margin-top: 0.80rem;
   z-index: 9000; }
   .btn__index:hover {
     color: #367c2b;
@@ -308,7 +312,8 @@ svg > rect {
   @media only screen and (min-width: 768px) {
     .btn__index {
       font-size: 1.3rem;
-      padding: 7px 20px 9px; } }
+      padding: 7px 20px 9px;
+      margin-top: 2rem; } }
 
 .icon__secondary {
   color: #ffc107;
@@ -484,6 +489,18 @@ svg > rect {
     .service__cosembrar__text {
       width: 40vw; } }
 
+.order__1__phone {
+  order: 1; }
+  @media only screen and (min-width: 768px) {
+    .order__1__phone {
+      order: 2; } }
+
+.order__2__phone {
+  order: 2; }
+  @media only screen and (min-width: 768px) {
+    .order__2__phone {
+      order: 1; } }
+
 .link__more {
   font-weight: 500;
   color: #ffc107;
@@ -493,8 +510,11 @@ svg > rect {
     color: #444; }
   @media only screen and (min-width: 325px) {
     .link__more {
-      font-size: 1rem; } }
+      font-size: 1.2rem; } }
   @media only screen and (min-width: 768px) {
+    .link__more {
+      font-size: 1.3rem; } }
+  @media only screen and (min-width: 1024px) {
     .link__more {
       font-size: 1.5rem; } }
 
@@ -729,12 +749,14 @@ svg > rect {
       padding-bottom: 7%; } }
 
 .action__content {
-  margin-top: 5%;
+  margin-top: 4%;
   margin-bottom: 1%; }
+  @media only screen and (min-width: 768px) {
+    .action__content {
+      margin-top: 2%; } }
   @media only screen and (min-width: 1024px) {
     .action__content {
-      margin-top: 3%;
-      margin-bottom: 1%; } }
+      margin-top: 3%; } }
 
 .action__icons {
   color: #fff;
@@ -742,6 +764,12 @@ svg > rect {
   .action__icons:hover {
     color: #fff;
     text-shadow: 3px 3px 11px rgba(255, 255, 255, 0.45); }
+  @media only screen and (min-width: 768px) {
+    .action__icons {
+      font-size: 2rem; } }
+  @media only screen and (min-width: 1024px) {
+    .action__icons {
+      font-size: 2.3rem; } }
 
 /* /Call to action "Seguinos" */
 /* Call to action "Contactanos" */
@@ -1067,22 +1095,26 @@ svg > rect {
 
 .cotizacion__dolar {
   margin-bottom: 5%;
-  max-width: 290px; }
+  max-width: 290px;
+  order: 2; }
   @media only screen and (min-width: 768px) {
     .cotizacion__dolar {
       margin-bottom: 0;
-      max-width: 290px; } }
+      max-width: 290px;
+      order: 1; } }
   @media only screen and (min-width: 1024px) {
     .cotizacion__dolar {
       max-width: 100%; } }
 
 .cotizacion__granos {
   margin-bottom: 5%;
-  max-width: 290px; }
+  max-width: 290px;
+  order: 1; }
   @media only screen and (min-width: 768px) {
     .cotizacion__granos {
       margin-bottom: 0;
-      max-width: 290px; } }
+      max-width: 290px;
+      order: 2; } }
   @media only screen and (min-width: 1024px) {
     .cotizacion__granos {
       max-width: 100%; } }
