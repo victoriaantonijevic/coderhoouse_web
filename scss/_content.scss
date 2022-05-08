@@ -146,7 +146,7 @@ svg > rect {
     box-shadow: $shadowLight;
     padding: 9px 30px 11px;
     margin-top: 0.80rem;
-    z-index: 9000;
+    z-index: 10;
     &:hover{
         color: $colorPrimary;
         background-color: $colorBright;
@@ -397,6 +397,21 @@ svg > rect {
     }
     @media only screen and (min-width: 1024px) {
         font-size: 3.7rem;
+    }
+}
+.style__h3{
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: #666;
+    @media only screen and (min-width: 768px) {
+        font-size: 1.8rem;
+        font-weight: normal;
+        color: #666;
+    }
+    @media only screen and (min-width: 1024px) {
+        font-size: 2.5rem;
+        font-weight: normal;
+        color: #666;
     }
 }
 .display__i{
